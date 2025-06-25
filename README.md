@@ -10,7 +10,7 @@ Bruno Velázquez
 
 TP ASISTENCIA
 
-1. Historias de Usuario (Eric)
+1. Registro de usuarios (Eric)
 2. Registro de asistencia
 3. Consulta de asistencia (Bruno)
 4. Gestión de roles y autenticación
