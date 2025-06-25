@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gestión de Asistencia</title>
+</head>
+<body>
+    <h1>Registrar Usuario</h1>
+    <form id="registroForm">
+        Nombre: <input type="text" id="nombre"><br>
+        Rol:
+        <select id="rol">
+            <option value="alumno">Alumno</option>
+            <option value="docente">Docente</option>
+        </select><br>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h1>Marcar Asistencia</h1>
+    <form id="asistenciaForm">
+        ID Usuario: <input type="number" id="usuario_id"><br>
+        Presente: <input type="checkbox" id="presente"><br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        document.getElementById('registroForm').addEventListener('submit', async function(e){
+            e.preventDefault();
+            const nombre = document.getElementById('nombre').value;
+            const rol = document.getElementById('rol').value;
+            await fetch('http://localhost:5000/usuarios', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({nombre, rol})
+            });
+            alert('Usuario registrado');
+        });
+
+        document.getElementById('asistenciaForm').addEventListener('submit', async function(e){
+            e.preventDefault();
+            const usuario_id = document.getElementById('usuario_id').value;
+            const presente = document.getElementById('presente').checked;
+            await fetch('http://localhost:5000/asistencia', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({usuario_id, presente})
+            });
+            alert('Asistencia registrada');
+        });
+    </script>
+</body>
+</html>
