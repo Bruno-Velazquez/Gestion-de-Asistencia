@@ -10,11 +10,8 @@ Bruno Velázquez
 
 TP ASISTENCIA
 
-Registrar personas (alta de usuarios) Como administrador del sistema, quiero registrar nuevas personas con sus datos, para poder llevar un control individual de la asistencia de cada una.
-
-Marcar asistencia Como administrador del sistema, quiero marcar la asistencia diaria de las personas registradas, para llevar un seguimiento preciso de quién asistió y quién no en cada jornada.
-
-Ver asistencia por persona o grupo Como administrador del sistema, quiero consultar los registros de asistencia por persona o grupo, para obtener estadísticas y detectar patrones de asistencia o inasistencia.
-
-Editar/eliminar registros Como administrador del sistema, quiero editar o eliminar los datos de una persona o registros de asistencia, para corregir errores o actualizar la información cuando sea necesario.
+1. Historias de Usuario
+2. Registro de asistencia
+3. Consulta de asistencia (Bruno)
+4. Gestión de roles y autenticación
 https://chatgpt.com/share/685c74c3-4220-8012-a4c7-341a7d426cd6
