@@ -17,3 +17,4 @@ Marcar asistencia Como administrador del sistema, quiero marcar la asistencia di
 Ver asistencia por persona o grupo Como administrador del sistema, quiero consultar los registros de asistencia por persona o grupo, para obtener estadísticas y detectar patrones de asistencia o inasistencia.
 
 Editar/eliminar registros Como administrador del sistema, quiero editar o eliminar los datos de una persona o registros de asistencia, para corregir errores o actualizar la información cuando sea necesario.
+https://chatgpt.com/share/685c74c3-4220-8012-a4c7-341a7d426cd6
