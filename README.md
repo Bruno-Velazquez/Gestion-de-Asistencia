@@ -14,4 +14,5 @@ TP ASISTENCIA
 2. Registro de asistencia
 3. Consulta de asistencia (Bruno)
 4. Gestión de roles y autenticación
+
 https://chatgpt.com/share/685c74c3-4220-8012-a4c7-341a7d426cd6
