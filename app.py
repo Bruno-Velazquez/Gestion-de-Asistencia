@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from flask_cors import CORS
@@ -18,6 +18,10 @@ class Asistencia(db.Model):
     usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
     fecha = db.Column(db.String(20))
     presente = db.Column(db.Boolean)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
 
 @app.route('/usuarios', methods=['POST'])
 def registrar_usuario():
